@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.send {
+    @apply self-end max-w-[60%] my-2 py-2 px-4 bg-[#7678ED] text-white rounded-2xl;
+}
+
+.receive {
+    @apply self-start max-w-[60%] my-2 py-2 px-4 bg-[#dbdcff] rounded-2xl;
+}
