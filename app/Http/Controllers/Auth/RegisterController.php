@@ -27,20 +27,12 @@ class RegisterController extends Controller
             'password' => ['required', 'confirmed'],
         ]);
 
-        User::created([
-            'name' => $credentials['firstname'] . $credentials['lastname'],
+        User::query()->create([
+            'name' => $credentials['firstname'] . ' ' . $credentials['lastname'],
             'email' => $credentials['email'],
             'password' => Hash::make($credentials['password']),
         ]);
 
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-
-            return redirect()->intended('/');
-        }
-
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        return back()->with('success', true);
     }
 }
