@@ -48,7 +48,7 @@
                     </svg> Google</button>
                 </div>
 
-        <p class="mt-6 text-gray-600 text-center">Don't have an account? <a href="/register" class="text-purple-600 hover:underline">Register</a></p>
+        <p class="mt-6 text-gray-600 text-center">Don't have an account? <a href="{{ route('register') }}" class="text-purple-600 hover:underline">Register</a></p>
     </div>
 @endsection
 

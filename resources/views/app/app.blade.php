@@ -1,8 +1,8 @@
-@extends('app.layouts.single-layout')
+@extends('app.layouts.layout')
 
 @section('content')
     <div class="w-[70%] bg-gray-900 p-2 flex h-screen overflow-hidden">
-        <div class="w-[30%] border border-white py-6 px-2 h-full overflow-hidden rounded-tl-[3rem] rounded-bl-[3rem] bg-[#f9fafc]">
+        <div class="w-[30%] border border-white py-6 px-2 h-full overflow-hidden rounded-tl-2xl rounded-bl-2xl bg-[#f9fafc]">
             <div class="w-[90%] my-3 px-3 py-2 mx-auto bg-[#dbdcff] rounded-xl flex items-center">
                 <label for="search"></label>
                 <button type="submit">
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="w-[70%] p-4 h-full bg-[#EEEEF8] overflow-hidden rounded-tr-[3rem] rounded-br-[3rem]">
+        <div class="w-[70%] p-4 h-full bg-[#EEEEF8] overflow-hidden rounded-tr-2xl rounded-br-2xl">
             <div class="w-[95%] mx-auto h-20 flex justify-between py-2 px-4 select-none">
                 <div>
                     <p class="text-3xl font-semibold">Design Chats</p>
@@ -68,26 +68,29 @@
                 </div>
             </div>
 
-            <div class="w-[95%] mx-auto h-[80%] p-4 flex flex-col justify-end overflow-y-scroll">
-                <p class="receive">This is the message of my life line i</p>
-                <p class="send">This is the message of my life line i Lorem ipsum dolor sit amet, consectetur elit. Dicta provident.</p>
-                <p class="send">I Love you Babu 💕💖</p>
-                <p class="receive">Ok Baby😘</p>
-                <p class="send">Good Night Baby😘😘</p>
-                <p class="receive">This is the message of my life line i</p>
-                <p class="send">This is the message of my life line i Lorem ipsum dolor sit amet, consectetur elit. Dicta provident.</p>
-                <p class="send">I Love you Babu 💕💖</p>
-                <p class="receive">Ok Baby😘</p>
-                <p class="send">Good Night Baby😘😘</p>
-                <p class="receive">This is the message of my life line i</p>
-                <p class="send">This is the message of my life line i Lorem ipsum dolor sit amet, consectetur elit. Dicta provident.</p>
-                <p class="send">I Love you Babu 💕💖</p>
-                <p class="receive">Ok Baby😘</p>
-                <p class="send">Good Night Baby😘😘</p>
-
+            <div class="h-[80%] px-4 py-6 flex flex-col overflow-auto space-y-4">
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis! Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis! Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis! Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis! Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis! Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis! Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis Lorem ipsum dolor sit amet.</p>
+                <p class="send">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
+                <p class="receive">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quis!</p>
             </div>
 
-            <div class="w-[95%] py-2 px-4 mb-2 mx-auto h-14 bg-[#dbdcff] rounded-2xl flex justify-evenly items-center">
+            <div class="py-2 px-4 mb-2 mx-auto h-14 bg-[#dbdcff] rounded-2xl flex justify-evenly items-center">
                 <svg class="cursor-pointer" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Attachment</title> <g id="Attachment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <rect id="Container" x="0" y="0" width="24" height="24"> </rect> <path d="M17,17.5 L8.25,17.5 C5.35050506,17.5 3,15.1494949 3,12.25 C3,9.35050506 5.35050506,7 8.25,7 L18.5,7 C20.4329966,7 22,8.56700338 22,10.5 C22,12.4329966 20.4329966,14 18.5,14 L8.25,14 C7.28350169,14 6.5,13.2164983 6.5,12.25 C6.5,11.2835017 7.28350169,10.5 8.25,10.5 L18.5,10.5 L18.5,10.5" id="shape" stroke="#9091B9" stroke-width="2" stroke-linecap="round" stroke-dasharray="0,0" transform="translate(12.500000, 12.250000) rotate(-45.000000) translate(-12.500000, -12.250000) "> </path> </g> </g></svg>
 
                 <label for="search"></label>
@@ -102,5 +105,3 @@
         </div>
     </div>
 @endsection
-
-

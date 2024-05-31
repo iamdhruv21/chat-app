@@ -1,5 +1,5 @@
 <div class="w-[25%] p-2 h-screen bg-gray-900">
-    <div class="py-6 px-2 h-full rounded-[3rem] bg-[#f9fafc]">
+    <div class="py-6 px-2 h-full rounded-2xl bg-[#f9fafc]">
         <div class="h-[30%] px-4">
             <div class="w-24 h-24 rounded-full mx-auto overflow-hidden grid place-content-center">
                 <img src="{{ asset('image/user10.jpg') }}" alt="1">
