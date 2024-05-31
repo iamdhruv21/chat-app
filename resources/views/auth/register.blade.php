@@ -30,13 +30,13 @@
                     <p class="text-sm text-red-600 mx-2">* {{ $errors->first() }}</p>
                 @endif
                 @if(session()->has('success'))
-                    Hell yeah
+                    <p class="text-sm text-purple-600 mx-2">Successfully Registered. <a href="{{ route('login') }}" class="text-purple-600 font-bold underline hover:underline">Login to Continue</a></p>
                 @endif
             </div>
 
             <button type="submit" class="w-full mt-4 bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition duration-300">Register</button>
         </form>
-        <p class="mt-2 text-gray-600 text-center">Already have an account? <a href="/login" class="text-purple-600 hover:underline">Login</a></p>
+        <p class="mt-2 text-gray-600 text-center">Already have an account? <a href="{{ route('login') }}" class="text-purple-600 hover:underline">Login</a></p>
     </div>
 @endsection
 

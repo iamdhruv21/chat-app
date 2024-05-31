@@ -15,6 +15,7 @@
 <div class="flex">
     @include('app.layouts._partials.sidebar')
     @yield('content')
+    @include('app.layouts._partials.profile')
 </div>
 </body>
 </html>
